@@ -8,7 +8,7 @@
     transition: background-color 0.6s , height 0.6s;
 }
 
-.container {
+.header__container {
     width: 90%;
     display: flex;
     align-items: center;
@@ -54,17 +54,57 @@
 }
 
 .about{
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 88vh;
+    padding: 120px 0;
+    letter-spacing: 1.5px;
 }
 
+.container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about__figure, .about__text-container{
+    width: 50%;
+}
+
+.about__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__h2{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.about__h3{
+    font-weight: normal;
+}
 
 @media screen and (max-width:1023px){
-
-
     .burger{
         display: block;
     }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .about__figure, .about__text-container{
+        width: 100%;
+    }
+    
+
+
 }
 
 @media screen and (min-width:1024px){

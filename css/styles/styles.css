@@ -2,6 +2,7 @@
     --blanco: #fff;
     --negro: #000;
     --negro-opaco: #262626;
+    --gris: #777777;
     --verde: #71bd46;
 
 }
@@ -86,6 +87,19 @@ body{
 
 .home__text-container p{
     font-size: 22px;
+}
+
+.about__h2::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color: var(--verde);
+    margin-top: 30px;
+}
+
+.about__p{
+    color: var(--gris);
 }
 
 @media screen and (max-width:1023px){
