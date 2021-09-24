@@ -32,6 +32,14 @@ body{
     
 }
 
+.icon{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: var(--blanco);
+    font-size: 25px;
+}
+
 .nav__item{
     text-transform: uppercase;
 }
@@ -40,11 +48,21 @@ body{
     color: var(--blanco);
 }
 
+.burger{
+    transition: transform 0.6s ease-out;
+}
+
 .burger div{
     width: 25px;
     height: 3px;
     margin: 5px;
     background-color: var(--blanco);
+}
+
+.hide{
+    position: absolute;
+    right: 50px;
+    transform: translateX(80px) ;
 }
 
 .home{
@@ -75,6 +93,7 @@ body{
         height: 100vh;
         top: 0;
         margin: 0;
+        padding-top: 30px;
         background-color: var(--negro-opaco);
         display: flex;
         flex-direction: column;
