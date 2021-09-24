@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+.disabled{
+    overflow: hidden;
+}
+
 body{
     font-family: 'PT Sans', sans-serif;
 }
