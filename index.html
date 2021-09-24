@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,20 +20,22 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/base/normalize.css" />
     <link rel="stylesheet" href="css/layout/layout.css" />
+    <link rel="stylesheet" href="css/Components/button.css">
     <link rel="stylesheet" href="css/styles/styles.css">
+
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <div class="header__logo">Tu Empresa</div>
+          <div class="header__logo"><a href="#home">Tu Empresa</a></div>
 
           <ul class="nav__list">
             <div class="icon cancel-btn">
               <i class="fas fa-times"></i>
             </div>
             <li class="nav__item">
-              <a href="#" class="nav__link">Sobre Nosotros</a>
+              <a href="#about" class="nav__link">Sobre Nosotros</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Servicios</a>
@@ -57,17 +59,48 @@
     </header>
 
     <main class="main">
-      <section class="home">
+      <section class="home" id="home">
         <div class="home__text-container">
           <h1 class="home__h1">Tu Empresa</h1>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
+        <div class="btn-container">
+          <a href="#about" class="btn">Ver Mas</a>
+        </div>
       </section>
 
-      <section class="about container">
+      <section class="about container" id="about">
 
       </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
     <script src="js/app.js"></script>
   </body>

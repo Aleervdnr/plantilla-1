@@ -2,11 +2,8 @@
     --blanco: #fff;
     --negro: #000;
     --negro-opaco: #262626;
+    --verde: #71bd46;
 
-}
-
-*{
-    scroll-behavior: smooth;
 }
 
 .disabled{
@@ -17,8 +14,9 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
-.header__logo{
-    color: chartreuse;
+.header__logo a{
+    text-decoration: none;
+    color: var(--verde);
 }
 
 .header__logo, .home__h1{
@@ -63,6 +61,10 @@ body{
     position: absolute;
     right: 50px;
     transform: translateX(80px) ;
+}
+
+.cancel-btn{
+    display: none;
 }
 
 .home{
@@ -119,6 +121,10 @@ body{
 
     .home__text-container p{
         font-size: 18px;
+    }
+
+    .cancel-btn{
+        display: block;
     }
     
 }
