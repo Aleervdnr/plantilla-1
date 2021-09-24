@@ -102,6 +102,12 @@ body{
     color: var(--gris);
 }
 
+@media screen and (max-width:768px){
+    .hide{
+        right: 30px;
+    }
+}
+
 @media screen and (max-width:1023px){
     .nav__list{
         position: fixed;
