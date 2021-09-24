@@ -18,6 +18,12 @@ body{
     font-weight: 700;
 }
 
+.sticky{
+    height: 12vh;
+    background-color: var(--negro-opaco);
+    
+}
+
 .nav__item{
     text-transform: uppercase;
 }
