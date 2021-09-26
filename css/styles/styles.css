@@ -1,5 +1,6 @@
 :root{
     --blanco: #fff;
+    --fondo-section2: #f6f6f6;
     --negro: #000;
     --negro-opaco: #262626;
     --gris: #777777;
@@ -89,17 +90,47 @@ body{
     font-size: 22px;
 }
 
-.about__h2::before{
+.section__h2::before{
     content: "";
     position: absolute;
     width: 250px;
     height: 3px;
     background-color: var(--verde);
+    margin-top: 50px;
+}
+
+.section__h3::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: var(--verde);
     margin-top: 30px;
 }
 
-.about__p{
+.section__p{
     color: var(--gris);
+}
+
+.services{
+    background-color: var(--fondo-section2);
+}
+
+
+
+.icon-services{
+    font-size: 40px;
+    color: var(--verde);
+}
+
+@media screen and (max-width:380px) {
+    .section__h2::before{
+        content: "";
+        width: 50vw;
+        height: 3px;
+        background-color: var(--verde);
+        margin-top: 7vh;
+    }
 }
 
 @media screen and (max-width:768px){
