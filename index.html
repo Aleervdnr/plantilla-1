@@ -7,7 +7,10 @@
     <title>Tu Empresa</title>
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/38c07037bc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/38c07037bc.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,10 +23,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/base/normalize.css" />
     <link rel="stylesheet" href="css/layout/layout.css" />
-    <link rel="stylesheet" href="css/Components/card-slide-hover.css">
-    <link rel="stylesheet" href="css/Components/button.css">
-    <link rel="stylesheet" href="css/styles/styles.css">
-
+    <link rel="stylesheet" href="css/Components/card-slide-hover.css" />
+    <link rel="stylesheet" href="css/Components/img-modal.css" />
+    <link rel="stylesheet" href="css/Components/button.css" />
+    <link rel="stylesheet" href="css/styles/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -45,9 +48,11 @@
               <a href="#trabajos" class="nav__link">Trabajos</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Galeria</a>
+              <a href="#galeria" class="nav__link">Galeria</a>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contacto</a>
+            </li>
           </ul>
 
           <div class="burger">
@@ -73,115 +78,253 @@
       <section class="section about" id="about">
         <div class="about__container">
           <figure class="about__figure">
-            <img src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="about__img">
+            <img
+              src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="about__img"
+            />
           </figure>
           <div class="about__text-container">
             <h2 class="section__h2">Nuestra Empresa</h2>
-            <p class="section__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti magni alias optio? Dignissimos atque recusandae rerum vero repudiandae iusto illum nesciunt repellat harum quas, et officia fugiat numquam voluptatibus neque?
-            Quos cumque earum, quisquam odit pariatur consequuntur error aperiam beatae facilis explicabo sapiente harum cum assumenda a maxime impedit? Eveniet, natus. Saepe odio quos odit ducimus? Quasi eos ipsam consectetur.</p>
+            <p class="section__p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              magni alias optio? Dignissimos atque recusandae rerum vero
+              repudiandae iusto illum nesciunt repellat harum quas, et officia
+              fugiat numquam voluptatibus neque? Quos cumque earum, quisquam
+              odit pariatur consequuntur error aperiam beatae facilis explicabo
+              sapiente harum cum assumenda a maxime impedit? Eveniet, natus.
+              Saepe odio quos odit ducimus? Quasi eos ipsam consectetur.
+            </p>
             <h3 class="section__h3">Porque elegirnos</h3>
-            <p class="section__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum omnis, ratione dolores quae earum mollitia repellat aspernatur, illo eum corporis soluta delectus expedita accusantium eveniet. Assumenda aliquam velit adipisci eaque?</p>
+            <p class="section__p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+              omnis, ratione dolores quae earum mollitia repellat aspernatur,
+              illo eum corporis soluta delectus expedita accusantium eveniet.
+              Assumenda aliquam velit adipisci eaque?
+            </p>
           </div>
         </div>
-
       </section>
 
       <section class="section services" id="servicios">
         <div class="container-col">
           <h2 class="section__h2">Nuestros Servicios</h2>
           <div class="grid-container">
-
             <div class="box-services">
               <i class="fas fa-truck icon-services"></i>
               <h3 class="section__h3">Envios</h3>
-              <p class="section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, asperiores?</p>
+              <p class="section__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                asperiores?
+              </p>
             </div>
             <div class="box-services">
               <i class="fas fa-shopping-cart icon-services"></i>
               <h3 class="section__h3">Compras</h3>
-              <p class="section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, asperiores?</p>
+              <p class="section__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                asperiores?
+              </p>
             </div>
             <div class="box-services">
               <i class="fas fa-address-card icon-services"></i>
               <h3 class="section__h3">ID</h3>
-              <p class="section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, asperiores?</p>
+              <p class="section__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                asperiores?
+              </p>
             </div>
             <div class="box-services">
               <i class="fas fa-barcode icon-services"></i>
               <h3 class="section__h3">Codigo</h3>
-              <p class="section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, asperiores?</p>
+              <p class="section__p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                asperiores?
+              </p>
             </div>
-
           </div>
         </div>
-        
       </section>
 
       <section class="section works" id="trabajos">
         <div class="container-col">
           <h2 class="section__h2">Trabajos</h2>
           <div class="grid-container">
-
             <div class="container-slide-hover">
-              <img src="https://images.pexels.com/photos/6542680/pexels-photo-6542680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Avatar" class="image">
+              <img
+                src="https://images.pexels.com/photos/6542680/pexels-photo-6542680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Avatar"
+                class="image"
+              />
               <div class="overlay">
                 <div class="text">lorem</div>
               </div>
             </div>
 
             <div class="container-slide-hover">
-              <img src="https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Avatar" class="image">
+              <img
+                src="https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Avatar"
+                class="image"
+              />
               <div class="overlay">
                 <div class="text">lorem</div>
               </div>
             </div>
 
             <div class="container-slide-hover">
-              <img src="https://images.pexels.com/photos/4667081/pexels-photo-4667081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Avatar" class="image">
+              <img
+                src="https://images.pexels.com/photos/4667081/pexels-photo-4667081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Avatar"
+                class="image"
+              />
               <div class="overlay">
                 <div class="text">lorem</div>
               </div>
             </div>
 
             <div class="container-slide-hover">
-              <img src="https://images.pexels.com/photos/4021986/pexels-photo-4021986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Avatar" class="image">
+              <img
+                src="https://images.pexels.com/photos/4021986/pexels-photo-4021986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Avatar"
+                class="image"
+              />
               <div class="overlay">
                 <div class="text">lorem</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="section galeria" id="galeria">
+        <div class="container-col">
+          <h2 class="section__h2">Galeria</h2>
+          <div class="grid-container">
+            <div class="box-galeria">
+              <!-- Trigger the Modal -->
+              <img
+                id="myImg"
+                src="https://images.pexels.com/photos/941864/pexels-photo-941864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Snow"
+                style="width: 100%; max-width: 300px"
+              />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <figure >
+                  <img class="modal-content" id="img01" />
+                </figure>
+                
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+            </div>
+
+            <div class="box-galeria">
+              <!-- Trigger the Modal -->
+              <img
+                id="myImg2"
+                src="https://images.pexels.com/photos/2566029/pexels-photo-2566029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Snow"
+                style="width: 100%; max-width: 300px"
+              />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01" />
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+            </div>
+
+            <div class="box-galeria">
+              <!-- Trigger the Modal -->
+              <img
+                id="myImg3"
+                src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Snow"
+                style="width: 100%; max-width: 300px"
+              />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01" />
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+            </div>
+
+            <div class="box-galeria">
+              <!-- Trigger the Modal -->
+              <img
+                id="myImg4"
+                src="https://images.pexels.com/photos/2796105/pexels-photo-2796105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Snow"
+                style="width: 100%; max-width: 300px"
+              />
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01" />
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+            // Store hash
+            var hash = this.hash;
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
       });
-    } // End if
-  });
-});
-</script>
+    </script>
 
     <script src="js/app.js"></script>
   </body>

@@ -65,6 +65,10 @@ body{
     transform: translateX(80px) ;
 }
 
+.hide-modal{
+    display: none;
+}
+
 .cancel-btn{
     display: none;
 }
@@ -112,7 +116,7 @@ body{
     color: var(--gris);
 }
 
-.services{
+.services,.galeria{
     background-color: var(--fondo-section2);
 }
 
