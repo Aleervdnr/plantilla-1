@@ -39,12 +39,14 @@ var img4 = document.getElementById("myImg4");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 const body = document.querySelector("body")
+const burger = document.querySelector(".burger")
 
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
   body.classList.add("disabled")
+  burger.classList.add("hide")
 }
 
 img2.onclick = function(){
@@ -52,6 +54,7 @@ img2.onclick = function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
     body.classList.add("disabled")
+    burger.classList.add("hide")
   }
 
   img3.onclick = function(){
@@ -59,6 +62,7 @@ img2.onclick = function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
     body.classList.add("disabled")
+    burger.classList.add("hide")
   }
 
   img4.onclick = function(){
@@ -66,6 +70,7 @@ img2.onclick = function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
     body.classList.add("disabled")
+    burger.classList.add("hide")
   }
 
 // Get the <span> element that closes the modal
@@ -75,4 +80,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
   body.classList.remove("disabled")
+  burger.classList.remove("hide")
 }
