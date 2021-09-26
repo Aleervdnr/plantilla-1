@@ -147,6 +147,11 @@ body{
     text-transform: uppercase;
 }
 
+.footer{
+    background-color: var(--negro-opaco);
+    color: var(--blanco);
+}
+
 @media screen and (max-width:380px) {
     .section__h2::before{
         content: "";
