@@ -48,6 +48,10 @@ body{
     color: var(--blanco);
 }
 
+.nav__link:hover{
+    color: var(--verde);
+}
+
 .burger{
     transition: transform 0.6s ease-out;
 }

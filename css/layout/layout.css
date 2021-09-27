@@ -102,7 +102,6 @@
 }
 
 .box-services, .box-galeria{
-    margin-top: 50px;
     padding: 0 15px;
 }
 
@@ -117,6 +116,7 @@
     display: grid;
     grid-template-areas: 
     "a b c d";
+    margin-top: 50px;
 }
 
 .contacto__grid-container{
