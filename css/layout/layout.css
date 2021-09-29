@@ -127,7 +127,20 @@
 
 .footer__container{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__text-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__p{
+    font-size: 12px;
+    
 }
 
 @media screen and (max-width:380px) {

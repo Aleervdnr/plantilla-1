@@ -19,6 +19,37 @@ const navslide = ()=>{
 
 navslide()
 
+// nav section active on scroll
+
+const sections = document.querySelectorAll("section")
+const navlink = document.querySelectorAll("nav ul li a")
+
+window.addEventListener("scroll", ()=>{
+  let current = ""
+  sections.forEach( section =>{
+    const sectionTop = section.offsetTop
+    const sectionHeight = section.clientHeight
+    if(scrollY >= sectionTop - sectionHeight/3){
+      current = section.getAttribute("id")
+    }
+  })
+
+  navlink.forEach( a =>{
+    a.classList.remove("active")
+    if(a.classList.contains(current+"__link")){
+      a.classList.add("active")
+    }
+  })
+})
+
+
+
+
+
+
+
+
+
 const sticky = () =>{
     window.addEventListener("scroll", ()=>{
         var header = document.querySelector(".header")
